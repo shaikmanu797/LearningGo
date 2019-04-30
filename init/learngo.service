@@ -1,0 +1,12 @@
+[Unit]
+Description=Learning Go Service
+
+[Service]
+Type=simple
+SyslogIdentifier=learngo
+ExecStart=/usr/local/bin/learngo
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
